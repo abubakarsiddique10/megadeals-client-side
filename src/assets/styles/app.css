@@ -1,0 +1,26 @@
+/* Sub Header style*/
+
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+nav img {
+    transition: .5s !important;
+}
+
+#banner .banner-info {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+}
+
+#banner .button {
+    position: absolute;
+    left: 80px;
+    bottom: 30px
+}
