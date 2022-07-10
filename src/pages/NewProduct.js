@@ -1,5 +1,5 @@
 import React from "react";
-const BestSellersProduct = ({ product }) => {
+const NewProduct = ({ product }) => {
     const { name, rating, price, stock, discount, image } = product;
     return (
         <div className="border relative hover:border-[#F94073] transition-all duration-400">
@@ -16,8 +16,8 @@ const BestSellersProduct = ({ product }) => {
                 <h5>Price <span className="font-medium">{price}</span></h5>
                 <button className="bg-yellow-400 w-full mt-2 font-medium rounded-full py-1">Add to Cart</button>
             </div>
-            <h5 className="absolute top-5 left-3 bg-[#F94073] rounded py-1 w-10 flex justify-center items-center text-white text-[14px]">{discount}</h5>
+            <h5 className="absolute top-5 left-3 rounded py-1 w-10 flex justify-center items-center text-white bg-[#F94073] text-[14px]">{discount}</h5>
         </div>
     )
 }
-export default BestSellersProduct;
+export default NewProduct;

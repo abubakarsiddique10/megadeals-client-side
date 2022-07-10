@@ -24,3 +24,23 @@ nav img {
     left: 80px;
     bottom: 30px
 }
+
+#offers .product-img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#offers .arrow-btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#offers .arrow-btn button {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

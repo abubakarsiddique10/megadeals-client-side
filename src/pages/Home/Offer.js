@@ -1,9 +1,10 @@
 import React from "react";
-const BestSellersProduct = ({ product }) => {
-    const { name, rating, price, stock, discount, image } = product;
+const Offer = ({ offer }) => {
+    const { image, name, stock, price, rating, discount } = offer;
+
     return (
-        <div className="border relative hover:border-[#F94073] transition-all duration-400">
-            <img src={image} className="w-[200px] mx-auto" />
+        <div className="border relative hover:border-[#F94073] transition-all duration-400 w-[246px]">
+            <img src={image} className="product-img" />
             <div className="p-4">
                 <h3 className="font-medium mb-2">{name}</h3>
                 <span className="font-bold text-sm text-emerald-500">{stock}</span>
@@ -20,4 +21,7 @@ const BestSellersProduct = ({ product }) => {
         </div>
     )
 }
-export default BestSellersProduct;
+export default Offer;
+<div className="border w-[246px]">
+    <img src="https://i.ibb.co/wQ1FRB1/product-image-62-346x310.jpg" className="" />
+</div>
