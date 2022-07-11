@@ -15,7 +15,7 @@ const NewProducts = () => {
             <div className="container">
                 <Title btn={"View All"} title={"New Products"} subtitle={"New products with updated stocks."} />
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
                     {
                         minimuProducts.map(product => <NewProduct product={product} />)
                     }

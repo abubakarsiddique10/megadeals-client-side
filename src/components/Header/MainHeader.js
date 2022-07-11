@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 const MainHeader = () => {
     return (
         <section style={{ borderBottom: "1px solid #6e6767" }}>
@@ -13,20 +15,12 @@ const MainHeader = () => {
                         <input type="text" placeholder="Search" className="w-full py-2 px-4 rounded-full" />
                         <img className="w-6 absolute top-[9px] right-[15px]" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/search-1511218-1279309.png" />
                     </div>
-                    <div className="flex gap-5 items-center bg-white px-2 py-1 rounded">
-                        <div className="flex items-center">
-                            <img className="w-8" src="https://i.ibb.co/GTf09WW/bag.png" />
-                            <div className="bg-[#007580] ml-2 w-[20px] h-[20px] text-white flex items-center justify-center rounded-full">2</div>
-                        </div>
-                        <div>
-                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.63268 8.63151C0.649093 5.56068 1.79768 2.05077 5.02251 1.01218C5.85874 0.74461 6.74682 0.680878 7.61269 0.826305C8.47855 0.971732 9.29708 1.3221 10 1.84818C11.3338 0.816933 13.2743 0.4686 14.9683 1.01218C18.1923 2.05077 19.3491 5.56068 18.3664 8.63151C16.8356 13.499 10 17.2482 10 17.2482C10 17.2482 3.21484 13.5558 1.63268 8.63151V8.63151Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </div>
-                        <div>
-                            <img className="w-5" src="https://i.ibb.co/r4wcxrq/user.png" />
-
-                        </div>
+                    <div className="flex gap-5 items-center bg-white px-5 py-2 rounded relative">
+                        <img className="w-6" src="https://i.ibb.co/r4wcxrq/user.png" />
+                        <img className="w-6" src="https://i.ibb.co/b6FMqqx/love.png" />
+                        <img className="w-7" src="https://i.ibb.co/GTf09WW/bag.png" />
+                        <span className="absolute bg-red-500 h-6 w-6 rounded-full text-white flex justify-center items-center top-1 right-[7px] font-medium ">2</span>
+                        <span className="absolute bg-red-500 h-6 w-6 rounded-full text-white flex justify-center items-center top-1 left-20 font-medium ">3</span>
                     </div>
                 </div>
             </div>

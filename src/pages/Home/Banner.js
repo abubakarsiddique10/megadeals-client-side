@@ -52,9 +52,10 @@ const Banner = () => {
                     </div>
                 </div>
 
-                <div className="flex button gap-5">
-                    <button onClick={() => rightToLeft(1280)} className="btn">nextBtn</button>
-                    <button onClick={() => leftToRight(1280)} className="btn">prevBtn</button>
+
+                <div className="flex banner-btn gap-4">
+                    <button onClick={() => rightToLeft(1280)}><img src="https://i.ibb.co/SrYKyJn/left-arrow.png" className="w-5" /></button>
+                    <button onClick={() => leftToRight(1280)}><img src=" https://i.ibb.co/C6gbyZ4/next.png" className="w-5" /></button>
                 </div>
             </div>
         </section >

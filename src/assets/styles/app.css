@@ -8,6 +8,17 @@
     margin: 0 auto;
 }
 
+#category ul li {
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#category ul li:hover {
+    color: #F94073;
+    transition: .3s;
+}
+
 nav img {
     transition: .5s !important;
 }
@@ -19,15 +30,26 @@ nav img {
     transform: translateY(-50%);
 }
 
-#banner .button {
+#banner .banner-btn {
     position: absolute;
     left: 80px;
-    bottom: 30px
+    bottom: 30px;
+}
+
+#banner .banner-btn button {
+    border: 2px solid black;
+    width: 50px;
+    height: 38px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #offers .product-img {
     width: 200px;
     margin: 0 auto;
+
 }
 
 #offers .arrow-btn {
@@ -43,4 +65,13 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.product-card .like-btn {
+    transition: .4s;
+}
+
+.product-card:hover .like-btn {
+    opacity: 1;
+
 }
