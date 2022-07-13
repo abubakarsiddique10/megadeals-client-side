@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import SubHeader from "./SubHeader";
 const Header = () => {
     return (
-        <header>
+        <header className="sticky top-0 z-50">
             <SubHeader />
             <MainHeader />
             <Navbar />

@@ -6,13 +6,13 @@ import ProductCategorise from "./ProductCategorise";
 import SpecialOffers from "./SpecialOffers";
 const Home = () => {
     return (
-        <>
+        <main className="z-[-1]">
             <Banner />
             <SpecialOffers />
             <ProductCategorise />
             <BestSellers />
             <NewProducts />
-        </>
+        </main>
     )
 }
 export default Home;

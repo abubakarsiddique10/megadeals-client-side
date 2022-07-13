@@ -28,7 +28,7 @@ const Banner = () => {
             <div className={`max-w-[1280px] m-auto overflow-hidden relative`}>
                 <div className={`w-[3840px] flex transition-all duration-500 ease-in`} style={{ marginLeft: `${-count}px` }}>
                     <div className="w-[1280px] relative">
-                        <img src="https://i.ibb.co/52hBDP6/slider-image-3.jpg" className="w-full h-auto z-[-3] img1" />
+                        <img src="https://i.ibb.co/52hBDP6/slider-image-3.jpg" className="w-full h-auto img1" />
                         <div className="banner-info">
                             <h3 class="text-5xl text-bold">A different kind <br />of grocery store</h3>
                             <p className="text-2xl mt-3">week. Don’t miss...</p>

@@ -47,7 +47,7 @@ nav img {
 }
 
 #offers .product-img {
-    width: 200px;
+    max-width: 200px;
     margin: 0 auto;
 
 }
@@ -71,7 +71,24 @@ nav img {
     transition: .4s;
 }
 
-.product-card:hover .like-btn {
+.product-card svg {
+    font-size: 18px;
     opacity: 1;
+    color: #2D3054;
 
+}
+
+.product-card .like-btn:hover {
+    opacity: 1;
+    color: #F94073;
+    background-color: black;
+}
+
+
+.sub-img:hover {
+    border: 1px solid #F94073;
+}
+
+#sign-in {
+    height: calc(100vh - 183px);
 }

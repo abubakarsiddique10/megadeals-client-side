@@ -5,7 +5,7 @@ import useProducts from "../../hooks/useProducts";
 const ProductCategorise = () => {
     const [products, setProducts] = useProducts();
     const [filterItems, setFilterItems] = useProducts();
-
+    const sliceItems = filterItems.slice(0, 6);
     const handleFilter = (category) => {
         const filterProducts = products.filter(products => products.category === category);
         setFilterItems(filterProducts)
@@ -31,9 +31,9 @@ const ProductCategorise = () => {
                             <li onClick={() => handleFilter("breads&bakery")}>Breads & Bakery</li>
                         </ul>
                     </div>
-                    <div className="border grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                         {
-                            filterItems.map((product, index) => <Card key={index} product={product} />)
+                            sliceItems.map((product, index) => <Card key={index} product={product} />)
                         }
                     </div>
                 </div>

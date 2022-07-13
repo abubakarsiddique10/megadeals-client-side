@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react";
 import Title from "../../components/Header/Title";
-import Offer from "./Offer";
+import VerticleCard from "../../components/Header/VerticleCard";
+import useProducts from "../../hooks/useProducts";
+
 const SpecialOffers = () => {
     const [count, setCount] = useState(0);
-    const [offers, setOffers] = useState([]);
-    let n = 0;
+    const [products, setProducts] = useProducts();
+    const sliceProducts = products.slice(0, 5)
+
+    // slider code
     useEffect(() => {
         fetch('offers.json')
             .then(res => res.json())
-            .then(data => setOffers(data))
-    }, [])
+            .then(data => setProducts(data))
+    }, []);
 
     const handleIncrease = () => {
-        console.log(n)
         if (count > 516) {
             setCount(0)
         }
@@ -20,11 +23,6 @@ const SpecialOffers = () => {
             setCount(count + 258);
         }
     }
-    /* setInterval(() => {
-        handleIncrease()
-    }, 2000) */
-    /* setInterval(handleIncrease, 1000); */
-
     const handleDecrease = () => {
         if (count < 1) {
             setCount(0)
@@ -33,7 +31,7 @@ const SpecialOffers = () => {
             setCount(count - 258);
         }
     }
-
+    // slider code
 
 
 
@@ -46,7 +44,7 @@ const SpecialOffers = () => {
 
                 <div className={`flex w-[2400px] gap-3 transition-all duration-500`} style={{ marginLeft: `${-count}px` }}>
                     {
-                        offers.map(offer => <Offer offer={offer} />)
+                        sliceProducts.map(product => <VerticleCard product={product} />)
                     }
                 </div>
                 <div className="mt-5 arrow-btn flex justify-between w-full">

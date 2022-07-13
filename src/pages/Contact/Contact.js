@@ -1,4 +1,5 @@
 import React from "react";
+import Input from "../../components/Input";
 import Info from "./Info";
 const Contact = () => {
     const info = [
@@ -29,10 +30,10 @@ const Contact = () => {
                         <p className="text-lg">Your email address will not be published. Required fields are marked </p>
                         <form className="flex flex-col gap-4 mt-8 text-black">
                             <div className="flex gap-4">
-                                <input type="text" placeholder="Name" className="border px-4 py-3 rounded w-full outline-none" />
-                                <input type="text" placeholder="Email" className="border px-4 py-3 w-full rounded outline-none" />
+                                <Input type={"text"} placeholder={"Name"} />
+                                <Input type={"email"} placeholder={"Email"} />
                             </div>
-                            <input type="number" placeholder="Phone" className="border px-4 py-3 w-full rounded outline-none" />
+                            <Input type={"number"} placeholder={"Number"} />
                             <textarea placeholder="Descrption..." className="border px-4 py-3 w-full rounded h-[150px] outline-none" ></textarea>
                             <button className="btn w-40 mt-2 bg-[#E83C6B]">Send Message</button>
                         </form>
