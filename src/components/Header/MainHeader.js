@@ -1,5 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import ProductDetails from "./ProductDetails";
 const MainHeader = () => {
+    /* let count = 0;
+    const [carts, setCarts] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:5000/carts')
+            .then(res => res.json())
+            .then(data => setCarts(data))
+    }, []);
+    const quantity = carts.map(cart => +cart.quantity);
+
+    for (let i = 0; i < quantity.length; i++) {
+        count = count + quantity[i]
+    } */
+
     return (
         <section id="main-header" style={{ borderBottom: "1px solid #6e6767" }}>
             <div className="bg-[#2D3054] py-2">
@@ -14,11 +29,15 @@ const MainHeader = () => {
                         <img className="w-6 absolute top-[5px] right-[15px]" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/search-1511218-1279309.png" />
                     </div>
                     <div className="flex gap-7 items-center px-5 py-2 rounded relative">
+                        <div>
 
+                        </div>
                         <img className="w-[22px] user cursor-pointer" src="https://i.ibb.co/T4k0H2n/user-1.png" />
                         <img src="https://i.ibb.co/JFxcr2R/heart-5.png" />
-                        <img src="https://i.ibb.co/wBY6N5f/bag-1.png" />
-                        <span className="absolute bg-red-500 h-6 w-6 rounded-full text-white flex justify-center items-center top-1 right-[7px] font-medium ">2</span>
+                        <Link to="/proceed" className="cursor-pointer">
+                            <img src="https://i.ibb.co/wBY6N5f/bag-1.png" />
+                        </Link>
+                        <span className="absolute bg-red-500 h-6 w-6 rounded-full text-white flex justify-center items-center top-0 right-[7px] font-medium ">{0}</span>
                         <span className="absolute bg-red-500 h-6 w-6 rounded-full text-white flex justify-center items-center top-1 left-[85px] font-medium ">3</span>
                     </div>
                 </div>

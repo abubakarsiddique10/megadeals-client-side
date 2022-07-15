@@ -9,16 +9,15 @@ const SubHeader = () => {
     const handleSignOut = () => {
         signOut(auth)
     }
-    console.log(user)
     return (
-        <div className="bg-[#272343] text-white py-2">
+        <div className="bg-[#272343] text-white py-2 text-sm">
             <div className={`container flex justify-between`}>
-                <div className="flex items-center gap-x-4">
+                <div className="flex items-center gap-x-5">
                     <div>
-                        <Link to="" className="ml-2">Help & Contact</Link>
+                        <Link to="">Help & Contact</Link>
                     </div>
                     <div>
-                        <Link to="" className="ml-2">Order Tracking</Link>
+                        <Link to="">Order Tracking</Link>
                     </div>
                 </div>
                 <div className="flex gap-6 items-center">

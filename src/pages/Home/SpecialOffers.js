@@ -33,14 +33,15 @@ const SpecialOffers = () => {
     }
     // slider code
 
-
-
-
-
     return (
-        <section id="offers" className="mt-8">
+        <section id="offers">
             <div className="max-w-[1280px] mx-auto overflow-hidden relative">
-                <Title title={"Special Offers of the week"} subtitle={"Ut placerat, magna quis porttitor vulputate, magna nunc auctor ante."} />
+                <div className="mb-8">
+                    <h1 className="title">
+                        Special Offers of the week
+                    </h1>
+                    <p className="sub-title">Ut placerat, magna quis porttitor vulputate, magna nunc auctor ante.</p>
+                </div>
 
                 <div className={`flex w-[2400px] gap-3 transition-all duration-500`} style={{ marginLeft: `${-count}px` }}>
                     {

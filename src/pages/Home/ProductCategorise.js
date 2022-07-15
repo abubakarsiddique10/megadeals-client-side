@@ -16,9 +16,9 @@ const ProductCategorise = () => {
 
     }
     return (
-        <section id="category" className="mt-5">
+        <section id="category">
             <div className="container">
-                <h1 className="font-medium text-2xl mb-3">Product Categorise</h1>
+                <h1 className="title mb-7">Product Categorise</h1>
                 <div className="flex gap-3">
                     <div className="w-[246px]">
                         <ul className="flex flex-col gap-y-1">

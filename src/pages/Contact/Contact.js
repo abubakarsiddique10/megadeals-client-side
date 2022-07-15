@@ -11,8 +11,8 @@ const Contact = () => {
         <section className="">
             <h1 className="text-center my-8 text-4xl font-medium">Contact Us</h1>
             <div className="container">
-                <div className="flex gap-8">
-                    <div className="w-[500px] bg-[#F7F2EB] p-10 rounded">
+                <div className="md:flex gap-8">
+                    <div className="md:max-w-[500px] bg-[#F7F2EB] p-10 rounded mb-10 md:mb-0 w-full">
                         <h1 className="text-3xl font-medium ">Get In Touch</h1>
                         <p className="text-lg">Parking is only available on weekends. Feel free to buzz 101 at the intercom!</p>
 

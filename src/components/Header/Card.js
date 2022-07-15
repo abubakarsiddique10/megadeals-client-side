@@ -1,11 +1,10 @@
 import React from "react";
 
-
 const Card = ({ product }) => {
     const { productName, categorise, discountPrice, percantage, ratings, price, stock, subImg, image } = product;
 
     return (
-        <div className="product-card border relative hover:border-[#F94073] transition-all duration-400 flex">
+        <div className="product-card border relative hover:border-[#F94073] transition-all duration-400 flex cursor-pointer">
             <img src={image} className="h-[100px] my-auto" />
             <div className="p-4">
                 <h3 className="font-medium mb-2">{productName}</h3>
@@ -15,9 +14,9 @@ const Card = ({ product }) => {
                         ratings.map((rating, index) => <img src={rating.img1} />)
                     }
                 </div>
-                <div className="flex gap-2">
-                    <h5><span className="font-bold text-[#F94073] text-xl">{discountPrice}</span></h5>
-                    <h5><del className="font-medium text-[#12111163] text-xl">{price}</del></h5>
+                <div className="flex gap-2 text-lg">
+                    <h5><span className="font-bold text-[#F94073]">{discountPrice}</span></h5>
+                    <h5><del className="font-medium text-[#12111163]">{price}</del></h5>
                 </div>
 
             </div>

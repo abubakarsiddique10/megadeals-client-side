@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
+import auth from "../../firebase.init";
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const [user] = useAuthState(auth)
     return (
         <nav className="py-4 bg-[#2D3054] text-white  overflow-hidden">
             <div className="container flex justify-between items-center">
@@ -12,9 +15,9 @@ const Navbar = () => {
                 <ul className={`lg:flex lg:static lg:z-[1] z-[-1] lg:mt-0 lg:w-auto lg:p-0 p-8 absolute right-0 top-[100%] font-medium text-lg gap-5 w-56 bg-[#2D3054] lg:transition-none transition-all duration-500 ease-in ${open ? "mt-0" : "mt-[-232px]"}`}>
                     <li><a href="">Home</a></li>
                     <li><a href="">Shop</a></li>
-                    <li><Link to="/dashboard">Dashboard</Link></li>
+                    {user && <li><Link to="/dashboard">Dashboard</Link></li>}
                     <li><a href="">Page</a></li>
-                    <li><a href="">About</a></li>
+                    <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
